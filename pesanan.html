@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endutt Pet Shop</title>
+    <link rel="icon" href="./img/logo.png">
+    <style>
+        body {
+            background-color: violet;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        header {
+            width: 100%;
+            background-color: purple;
+            color: violet;
+            padding: 10px 0;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+        header table {
+            margin: auto; 
+            width: 90%;
+        }
+        header a {
+            color: darkviolet;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header a:hover {
+            background-color: violet;
+            border-radius: 5px;
+        }   
+        footer {
+            width: 100%;
+            background-color: purple;
+            color: violet;
+            padding: 10px 0;
+            text-align: left; 
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            margin-top: 74px;
+        }
+        footer p{
+            text-align: center;
+            font-size: small;
+        }
+        table {
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: purple;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: darkviolet;
+        }
+        .center-table {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        
+        .center-table tr td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table width ="100%">
+            <thead>
+                <tr>
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="shop.html">Shop</a></th>
+                    <th><a href="pelayanan.html">Pelayanan</a></th>
+                    <th><a href="about.html">About</a></th>
+                    <th><a href="kontak.html">Contact us</a></th>
+                </tr>
+            </thead>
+        </table>
+    </header>
+    <table width="100%" class="center-table">
+        <tbody>
+            <tr><td><img src="./img/logo.png" alt="" width="300" style="border-radius: 100px 0px 80px 0px;" ></td></tr>
+            <tr>
+                <td colspan="5" align="center">
+                    <h1>Pesanan Diproses</h1>
+                    <p><i>Pesanan Anda sedang diproses. Terima kasih atas pesanan Anda!</i></p>
+                </td>
+            </tr>
+            <tr><td colspan="5" align="center"></td></tr>
+            <tr><td colspan="5" align="center"><a href="shop.html" class="back-button">Kembali ke Shop</a></td></tr>
+        </tbody>
+    </table>
+    <footer>
+        <hr>
+        <p>@copyright Ardhito Bintang Pamungkas</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endutt Pet Shop</title>
+    <link rel="icon" href="./img/logo.png">
+    <style>
+        body {
+            background-color: violet;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table {
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table h1{
+            text-align: center;
+        }
+        table h2{
+            text-align: center;
+        }
+        table h3{
+            text-align: center;
+        }
+        table input,
+        table textarea {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: left; 
+        }
+        table td:nth-child(1){
+            text-align: left;
+        }
+        table textarea{
+            height: 100px;
+            font-size: 18px;
+        }
+        .pesan-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: purple;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .pesan-button:hover {
+            background-color: darkviolet;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        header {
+            width: 100%;
+            background-color: purple;
+            color: violet;
+            padding: 10px 0;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+        header table {
+            margin: auto; 
+            width: 90%;
+        }
+        header a {
+            color: darkviolet;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header a:hover {
+            background-color: violet;
+            border-radius: 5px;
+        }   
+        footer {
+            width: 100%;
+            background-color: purple;
+            color: violet;
+            padding: 10px 0;
+            text-align: left; 
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        footer p{
+            text-align: center;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table width ="100%">
+            <thead>
+                <tr>
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="shop.html">Shop</a></th>
+                    <th><a href="pelayanan.html">Pelayanan</a></th>
+                    <th><a href="about.html">About</a></th>
+                    <th><a href="kontak.html">Contact us</a></th>
+                </tr>
+            </thead>
+        </table>
+    </header>
+    
+    <table>
+        <tr>
+            <td colspan="5">
+                <h2>List Menu:</h2>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <h3>Mandi Kucing</h3>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" ><img src="./img/mak.jpeg" alt="" width="300px"><p><i>Mandi Kucing Rp.200.000</i></p></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <h3>Mandi Anjing</h3>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" ><img src="./img/ma.jpg" alt="" width="300px"><p><i>Mandi Anjing Rp.270.000</i></p></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <h3>Potong Rambut Pet</h3>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" ><img src="./img/pt.jpg" alt="" width="300px"><p><i>Potong Rambut RP.150.000</i></p></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <h3>Check Up Kesehatan Pet</h3>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" ><img src="./img/ck.png" alt="" width="400px"><p><i>Check Up Kesehatan RP.500.000</i></p></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <h3>Penitipan Pet</h3>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" ><img src="./img/ph.jpg" alt="" width="350px"><p><i>Penitipan Pet RP.100.000/jam</i></p></td>
+        </tr>
+        <tr>
+            <td colspan="5" align="center">
+                <h1>Form Pelayanan</h1>
+                <form action="layanan.html">
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Nama:</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Tuliskan nama Anda" autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Email:</label>
+                            </td>
+                            <td>
+                                <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required placeholder="abc@gmail.com" autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Telepon:</label>
+                            </td>
+                            <td>
+                                <input type="tel" placeholder="+62 8123456789" autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Alamat:</label>
+                            </td>
+                            <td>
+                                <textarea placeholder="Jl. Indonesia No.1" autocomplete="off"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Jenis Hewan:</label>
+                            </td>
+                            <td>
+                                <input type="text" autocomplete="off" placeholder="Kucing/Anjing">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Jenis Pelayanan:</label>
+                            </td>
+                            <td>
+                                <input type="number" placeholder="Pilih Jenis Layanan yang ingin Anda lakukan" autocomplete="off">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><input type="submit" value="Pesan" class="pesan-button"></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <hr>
+        <p>@copyright Ardhito Bintang Pamungkas</p>
+    </footer>
+</body>
+</html>
